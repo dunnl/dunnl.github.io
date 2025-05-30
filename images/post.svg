@@ -1,0 +1,82 @@
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="400" height="450" viewBox="0 0 8000 9000">
+<title>Central part of Post's lattice</title>
+<defs>
+	<path id="A" d="M0,0 L60,0 L30,-78 L0,0 M-46,60 L-46,48 L-32,48 L27,-104 L45,-104 L104,48 L120,48 L120,60 L60,60 L60,48 L78,48 L65,12 L-4,12 L-18,48 L0,48 L0,60 L-46,60"/>
+	<path id="P" d="M0,0 L29,0 C40,0 48,-3 54,-9 C60,-15 63,-23 63,-35 C63,-46 60,-54 54,-60 C48,-66 40,-69 29,-69 L0,-69 L0,0 M-43,83 L-43,72 L-22,72 L-22,-69 L-43,-69 L-43,-81 L35,-81 C51,-81 64,-77 74,-68 C83,-60 88,-49 88,-35 C88,-20 83,-9 74,-1 C64,7 51,12 35,12 L0,12 L0,72 L26,72 L26,83 L-43,83"/>
+	<path id="M" d="M0,0 L0,-12 L21,-12 L21,-153 L-1,-153 L-1,-164 L47,-164 L105,-47 L162,-164 L207,-164 L207,-153 L185,-153 L185,-12 L206,-12 L206,0 L142,0 L142,-12 L163,-12 L163,-139 L107,-24 L91,-24 L35,-139 L35,-12 L56,-12 L56,0 L0,0"/>
+	<path id="D" d="M0,0 L21,0 C42,0 58,-6 70,-18 C81,-31 87,-48 87,-71 C87,-93 81,-111 70,-123 C59,-135 42,-141 21,-141 L0,-141 L0,0 M-43,11 L-43,0 L-22,0 L-22,-141 L-43,-141 L-43,-153 L22,-153 C51,-153 73,-145 89,-131 C104,-116 112,-96 112,-71 C112,-45 104,-25 89,-10 C73,4 51,11 22,11 L-43,11"/>
+	<path id="U" d="M0,0 L-21,0 L-21,-11 L44,-11 L44,0 L23,0 L23,85 C23,106 26,121 33,129 C40,137 52,142 68,142 C85,142 97,137 104,129 C111,121 114,106 114,85 L114,0 L93,0 L93,-11 L148,-11 L148,0 L128,0 L128,87 C128,112 123,130 113,140 C104,151 87,156 64,156 C41,156 25,151 15,140 C5,130 0,112 0,87 L0,0"/>
+	<path id="sub0" d="M0,0 C8,0 13,-4 17,-12 C21,-20 23,-33 23,-49 C23,-66 21,-78 17,-86 C13,-95 8,-99 0,-99 C-7,-99 -13,-95 -16,-86 C-20,-78 -22,-66 -22,-49 C-22,-33 -20,-20 -16,-12 C-13,-4 -7,0 0,0 M0,8 C-12,8 -21,3 -27,-7 C-34,-17 -37,-31 -37,-49 C-37,-67 -34,-81 -27,-91 C-21,-101 -12,-106 0,-106 C12,-106 22,-101 28,-91 C35,-81 38,-67 38,-49 C38,-31 35,-17 28,-7 C22,3 12,8 0,8"/>
+	<path id="sub1" d="M0,0 v-8 h19 v-91 L-3,-85 v-10 L23,-112 h10 L33,-8 h20 v8 z"/>
+	<path id="bot" d="M0,0 v-144 h14 v144 h72 v14 h-157 v-14 z"/>
+	<g id="P0">
+		<use xlink:href="#P"/>
+		<use x="93" y="141" xlink:href="#sub0"/>
+	</g>
+	<g id="P1">
+		<use xlink:href="#P"/>
+		<use x="67" y="147" xlink:href="#sub1"/>
+	</g>
+</defs>
+<path fill="none" stroke="black" stroke-width="15" d="M1800,1900 L4300,3100 L3500,1700 L6500,700 L7300,2100 L4300,3100  L6500,700 v5000 L7300,7100 L4300,8100  L700,3100 L2900,700 L5400,1900 L5400,4400 L4300,8100  L3500,6700 L6500,5700 M5400,4400 L6500,3200  M3500,1700 v5000 M7300,2100 v5000 M4300,3100 v5000"/>
+<g fill="white" stroke="black" stroke-width="24">
+	<circle cx="2900" cy="700" r="80"/>
+	<circle cx="1800" cy="1900" r="80"/>
+	<circle cx="700" cy="3100" r="80"/>
+	<circle cx="6500" cy="700" r="80"/>
+	<circle cx="7300" cy="2100" r="80"/>
+	<circle cx="3500" cy="1700" r="80"/>
+	<circle cx="4300" cy="3100" r="80"/>
+	<circle cx="5400" cy="1900" r="80"/>
+	<circle cx="6500" cy="3200" r="80"/>
+	<circle cx="5400" cy="4400" r="80"/>
+	<circle cx="6500" cy="5700" r="80"/>
+	<circle cx="7300" cy="7100" r="80"/>
+	<circle cx="3500" cy="6700" r="80"/>
+	<circle cx="4300" cy="8100" r="80"/>
+</g>
+<use x="3200" y="600" xlink:href="#D"/>
+<g transform="translate(1400,1700)">
+	<use xlink:href="#D"/>
+	<use x="180" y="-72" xlink:href="#P"/>
+</g>
+<g transform="translate(1000,3200)">
+	<use xlink:href="#D"/>
+	<use x="137" y="12" xlink:href="#M"/>
+</g>
+<use x="6800" y="600" xlink:href="#A"/>
+<g transform="translate(3900,1900)">
+	<use xlink:href="#A"/>
+	<use x="173" y="-24" xlink:href="#P0"/>
+</g>
+<g transform="translate(7400,1800)">
+	<use xlink:href="#A"/>
+	<use x="173" y="-24" xlink:href="#P1"/>
+</g>
+<g transform="translate(5700,2000)">
+	<use xlink:href="#A"/>
+	<use x="173" y="48" xlink:href="#D"/>
+</g>
+<g transform="translate(4500,3500)">
+	<use xlink:href="#A"/>
+	<use x="173" y="-25" xlink:href="#P"/>
+</g>
+<use x="6700" y="3400" xlink:href="#U"/>
+<g transform="translate(5500,4700)">
+	<use xlink:href="#U"/>
+	<use x="214" y="141" xlink:href="#D"/>
+</g>
+<g transform="translate(6100,6000)">
+	<use xlink:href="#U"/>
+	<use x="170" y="152" xlink:href="#M"/>
+</g>
+<g transform="translate(3700,6200)">
+	<use xlink:href="#U"/>
+	<use x="213" y="68" xlink:href="#P0"/>
+</g>
+<g transform="translate(7200,7400)">
+	<use xlink:href="#U"/>
+	<use x="214" y="69" xlink:href="#P1"/>
+</g>
+<use x="4600" y="8400" xlink:href="#bot"/>
+</svg>
