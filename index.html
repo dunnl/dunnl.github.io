@@ -8,8 +8,20 @@
     <link rel="stylesheet" href="/theme.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato%7COpen+Sans:400,600,800%7CLora" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>  </head>
-  <body onload="PR.prettyPrint()" id="body">
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    <!-- Core favicon (ICO with 16x16 + 32x32 inside) -->
+    <link rel="icon" href="/icons/favicon.ico" sizes="any">
+    <!-- Modern PNG favicons at explicit sizes -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png">
+    <!-- Apple touch icon (iOS home screen) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <!-- Site manifest (optional, for installable PWAs) -->
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- Tab/OS chrome color (optional, nice touch) -->
+    <meta name="theme-color" content="#000">  </head>
+  <body id="body">
     <header id="header" class="navbar is-white">
       <div class="container">
 	<div class="navbar-brand">
@@ -37,30 +49,30 @@
       <div id="main-container" class="container">
         <section id="welcome" class="content">
         <h1 class="title is-3" id="welcome">Welcome</h1>
-        <p>I am a PhD candidate at the
+        <p>I’m a founder working on a
+        <a href="https://talariumlabs.io">nascent startup</a> in the
+        emergency communications space. Previously, I earned my PhD in
+        Computer Science at the
         <a href="https://www.cis.upenn.edu">University of
-        Pennsylvania</a>, where I am advised by
+        Pennsylvania</a>, where I was supervised by
         <a href="https://www.cis.upenn.edu/~val/home.html"><strong>Val
         Tannen</strong></a> and
         <a href="https://www.cis.upenn.edu/~stevez/"><strong>Steve
-        Zdancewic</strong></a>. My interests lie in formal verification,
-        programming languages, and highly reliable networks. For the
-        past two summers I have interned at <a
+        Zdancewic</strong></a>. My academic work has been in category
+        theory applied to formally verified programming languages. This
+        culminated in my PhD project,
+        <a href="https://github.com/dunnl/tealeaves">Tealeaves</a>, a
+        formalization of the (novel) theory of “decorated traversable
+        monads.”</p>
+        <p>During this time, I was also an intern at <a
         href="https://www.nasa.gov/langley">NASA Langley Research
-        Center</a> where I am investigating <a
-        href="https://en.wikipedia.org/wiki/Software-defined_networking">software-defined</a>,
-        <a
-        href="https://en.wikipedia.org/wiki/Delay-tolerant_networking">delay/distruption-tolerant</a>,
-        and <a
-        href="https://en.wikipedia.org/wiki/Wireless_ad_hoc_network">mobile
-        ad-hoc networking</a> applied to emergency and disaster response
-        scenarios. The common thread in my research is combining theory
-        with practice to make sure systems do what they are designed to
-        do reliably and verifiably.</p>
-        <p>I will be on the job market in 2024. I am interested in
-        public, academic, or industrial research in networks and
-        programming languages, particularly where this concerns
-        real-world critical systems.</p>
+        Center</a> where I was examining
+        <a href="https://ntrs.nasa.gov/citations/20250005643">distributed
+        systems challenges in wildland firefighting</a> and disaster
+        response. Through this internship, I became involved in
+        Next Generation 9‑1‑1 (NG911) standards development. Today, I
+        serve on many industry committees and workgroups responsible for
+        NG911 protocols and interoperability.</p>
         </section>
         <hr />
         <section id="education">
@@ -68,10 +80,7 @@
         <div id="education-container">
         <div class="education-entry">
         <div class="education-date">
-        <span class="education-year"> 2018—2024 </span>
-        <p class="education-footnote">
-        (expected)
-        </p>
+        <p><span class="education-year"> 2018—2025 </span></p>
         </div>
         <div class="education-content">
         <span class="education-degree">PhD, Computer Science</span>
@@ -116,28 +125,47 @@
         <section id="publications">
         <h2 class="title is-4" id="publications">Journal Papers and
         Peer-Reviewed Proceedings</h2>
-        <ol type="1">
+        <ul>
         <li><p><strong>Lawrence Dunn</strong>, Val Tannen, Steve
-        Zdancewic. Syntax Monads for the Working Formal Metatheorist.
-        (Applied Category Theory 2023)</p></li>
+        Zdancewic. <em>Structured Monads for Generic First-Order Syntax
+        Metatheory.</em> Journal of Automated Reasoning, 2025 |
+        <a href="https://www.researchgate.net/publication/394437484_Structured_Monads_for_Generic_First-Order_Syntax_Metatheory">ResearchGate</a>
+        | <a href="/bibtex/dunnjar2025.bib">BibTeX</a></p></li>
         <li><p><strong>Lawrence Dunn</strong>, Val Tannen, Steve
-        Zdancewic. Tealeaves: Structured monads for reusable first-order
-        syntax metatheory. (Interactive Theorem Proving 2023)</p></li>
-        <li><p>Jamie Vicary, Lawrence Dunn. Coherence for Frobenius
-        pseudomonoids and the geometry of linear proofs.</p></li>
-        <li><p>Jamie Vicary, Lawrence Dunn. Surface proofs for
-        non-commutative linear logic.</p></li>
-        </ol>
+        Zdancewic. <em>Syntax Monads for the Working Formal
+        Metatheorist.</em> Applied Category Theory, 2023 |
+        <a href="https://arxiv.org/abs/2312.08897">Arxiv</a></p></li>
+        <li><p><strong>Lawrence Dunn</strong>, Val Tannen, Steve
+        Zdancewic. <em>Tealeaves: Structured monads for reusable
+        first-order syntax metatheory.</em> Interactive Theorem Proving,
+        2023 |
+        <a href="https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITP.2023.14">Dagstuhl</a></p></li>
+        <li><p>Jamie Vicary, <strong>Lawrence Dunn</strong>. Coherence
+        for Frobenius pseudomonoids and the geometry of linear
+        proofs.</p></li>
+        <li><p>Jamie Vicary, <strong>Lawrence Dunn</strong>. Surface
+        proofs for non-commutative linear logic.</p></li>
+        </ul>
         <p>Other links:
         <a href="https://scholar.google.com/citations?user=8EtvC-wAAAAJ">Google
         Scholar</a>,
         <a href="https://orcid.org/0000-0001-6808-9441">ORCID </a></p>
         </section>
         <p><!-- /#publications --></p>
-        <section id="talks">
-        <h2 class="title is-4" id="workshop-papers">Workshop Papers</h2>
+        <section id="publications-other">
+        <h3 class="title is-5" id="other-publications">Other
+        Publications</h3>
         <ul>
-        <li>Lawrence Dunn. Tealeaves (CoqPL 2022)</li>
+        <li><p><strong>Lawrence Dunn</strong>. <em>Category Theoretic
+        Structure for First-Order Abstract Syntax Metatheory</em>
+        Doctorial dissertation. University of Pennsylvania, 2025. |
+        <a href="/dissertation.pdf">Download</a></p></li>
+        <li><p><strong>Lawrence Dunn</strong>, Alwyn Goodloe.
+        <em>Distributed Systems Challenges in Wildland Firefighting</em>
+        NASA Technical Memorandum, 2025. |
+        <a href="https://ntrs.nasa.gov/citations/20250005643">NTRS</a></p></li>
+        <li><p><strong>Lawrence Dunn</strong>. <em>Tealeaves</em>
+        Presentation at CoqPL Workshop, 2022</p></li>
         </ul>
         </section>
         <p><!-- /#talks --></p>
@@ -234,14 +262,13 @@
         I am always eager to learn new skills for building more
         predictable and robust systems.</p>
         <ul>
-        <li><p>Coq</p></li>
-        <li><p>OCaml</p></li>
-        <li><p>Haskell</p></li>
-        <li><p>Python
-        <!-- - <a href="https://p4.org">P4 (SDN language)</a> --></p></li>
-        <li><p><a href="https://nixos.org/">Nix &amp; NixOS
-        ecosystem</a></p></li>
+        <li><p>Programming languages: Haskell, Roqc, Rust,
+        Python</p></li>
+        <li><p>Ecosystems: NixOS, ATAK</p></li>
+        <li><p>General: NG911 Standards, Access Control, Identity
+        Management</p></li>
         </ul>
+        <h3 class="title is-5" id="standards">Standards</h3>
         </div>
         </section>
         <section id="contact">
@@ -258,11 +285,15 @@
         </li>
         <li>
         <a href="https://github.com/dunnl/">
-        <i class="fab fa-github"></i> Github </a>
+        <i class="fab fa-github"></i> dunnl </a>
+        </li>
+        <li>
+        <a href="https://linkedin.com/in/lawrencedunn/">
+        <i class="fab fa-linkedin"></i> LinkedIn </a>
         </li>
         </ul>
-        <p>Privacy is a right. You are encouraged to
-        <a href="/lawrence@comono.id.public.asc">use my public GPG
+        <p>You are encouraged to
+        <a href="/files/lawrence@comono.id.public.asc">use my public GPG
         key</a> for any reason or none.</p>
         <table class="table pgp__table">
         <tbody>
@@ -299,7 +330,7 @@
                   <!--<li><a href="https://github.com/dunnl/homepage">Repo</a></li>-->
                   <li><a href="#top">Return to top</a></li>
                   <li><a href="https://github.com/dunnl/tealeaves">Tealeaves</a></li>
-                  <li><a href="https://dblp.org">DBLP</a></li>
+                  <li><a href="https://dblp.org/pid/175/1169.html">DBLP</a></li>
                 </ul>
               </div>
               <div  class="column is-one-half footer__column">
@@ -329,7 +360,7 @@
               </div>
             </div>
             <section class="footer__item footer__copyright">
-              Copyright © 2017—2023 by Lawrence Dunn.
+              Copyright © 2017—2025 by Lawrence Dunn.
             </section>
           </div>
         </div>
